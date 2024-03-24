@@ -13,7 +13,7 @@ const crud_create_post = (req, res) => {
 	crud
 		.save()
 		.then((crud) => {
-			res.send(crud);
+			res.send("data added successfully");
 		})
 		.catch(function (err) {
 			res.status(422).send("Crud add failed");
